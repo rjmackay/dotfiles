@@ -1,0 +1,28 @@
+[user]
+	name = Robbie Mackay
+	email = rm@robbiemackay.com
+[color]
+	ui = auto
+[help]
+	autocorrect = 20
+[alias]
+	lol = log --graph --color --decorate --abbrev-commit --pretty=format:'%C(auto)%h%d %s %Cgreen(%cr)%C(bold blue) <%an>%Creset'
+	lg = log --graph --color --decorate --abbrev-commit
+	co = checkout
+	recent = for-each-ref --sort=-committerdate refs/heads/ --count=20
+	recent-feature = for-each-ref --sort=-committerdate refs/heads/feature/ --count=20
+[core]
+	excludesfile = /Users/robbie/.gitignore
+	editor = code -nw
+	ignorecase = false
+	whitespace = blank-at-eol,blank-at-eof,space-before-tab
+[apply]
+	whitespace = warn
+[push]
+	default = simple
+[merge]
+	tool = opendiff
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
